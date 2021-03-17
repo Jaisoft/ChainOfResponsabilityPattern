@@ -1,12 +1,12 @@
 public class ChainOfResponsabilityPatternDemo {
 
     private static Vehicle getChainOfLoggers(){
-        Vehicle emailVehicle = new AstonMartin();
-        Vehicle fileVehicle = new Ferrari();
-        Vehicle consoleVehicle = new Lamborghini();
-        emailVehicle.setNextVehicle(fileVehicle);
-        fileVehicle.setNextVehicle(consoleVehicle);
-        return emailVehicle;
+        Vehicle astonMartin = new AstonMartin();
+        Vehicle ferrari = new Ferrari();
+        Vehicle lamborghini = new Lamborghini();
+        astonMartin.setNextVehicle(ferrari);
+        ferrari.setNextVehicle(lamborghini);
+        return astonMartin;
     }
 
 
